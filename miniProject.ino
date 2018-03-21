@@ -9,7 +9,7 @@
 #define FIREBASE_HOST "miniproject-2560.firebaseio.com"
 #define FIREBASE_KEY "KRo5ya1izH6Ae7CXbqAUT62UMRScvnkrlqZ5ZPYg"
 
-DHT dht;
+DHT dht;//สร้างออบเจก
 
 void setup()
 {
