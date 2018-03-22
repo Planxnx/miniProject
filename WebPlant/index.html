@@ -18,12 +18,13 @@
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
+    
     // ...
   });
 </script>
 
 <script>//ส่วนการทำงาน
-    var database = firebase.database();//ใช้งานดาต้าเบส
+    var db = firebase.database();//ใช้งานดาต้าเบส
     var a = "test4"
     
     //อัพข้อมูล A ไปที่ test/test2
@@ -34,11 +35,14 @@
     testB: "cd"});
     
     //อ่านข้อมูลจาก ReadTest แล้วแสดงผลใน console ว่า ok
-    var b = firebase.database().ref('ReadTest/');
+    var b = firebase.database().ref('ReadTest/');//หรือ var b = db.ref('ReadTest');
+    
     b.on('value', function(snapshot){ 
         var c = snapshot.val();
-        console.log("Read Test"+ c );
+        console.log("Read Test "+ c );
+
     });
+
 </script>
 </head>
 <body>
