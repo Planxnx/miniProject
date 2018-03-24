@@ -3,7 +3,7 @@
 #include <FirebaseArduino.h>
 #include <ArduinoJson.h>
 
-#define WIFI_SSID       "Planxnx"
+#define WIFI_SSID       "Planx"
 #define WIFI_PASSWORD   "planxthanee"
 
 #define FIREBASE_HOST "miniproject-2560.firebaseio.com"
