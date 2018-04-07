@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Web Plant Monitor</title>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <style type="text/css" media="screen">
+        body { background-color:#fffcbf;}
+        p { font-family: "Times New Roman", Times, serif; }
+    </style>
+    <script>
+        alert("ยินดีต้อนรับสู่ Plant Monitor")
+    </script>
+
+</head>
+<body>
+    <div id="header">   
+        <h1> Plant Monitor</h1>
+        <p>เครื่องมือช่วยเลือกพืชผักที่เหมาะสมในสภาพแวดล้อมนั้นๆ</p>
+        <hr size="3" color="5F4B8B" noshade> 
+    </div>
+    <div id="content">        
+        <p><b>วิธีใช้งาน</b><br>รอให้ Adruino เปิดใช้งานเป็นเวลา 1 นาที แล้วรีเฟรชหน้าเว็บ เว็บจะทำการแสดงผลอัตโนมัต<br> หากต้องการดูผลอีกรอบให้รอ 1 นาทีแล้วทำเหมือนเดิม</p>
+        
+        <div id=result>
+                <p align="center"> <b>พืชผักที่เหมาะสมกับการปลูกคือ</b><strong id="Plants"></strong></p>
+        </div>
+        <hr size="3" color="5F4B8B" noshade> 
+    </div>
+</body>
+</html>
