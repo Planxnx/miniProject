@@ -50,7 +50,7 @@ void loop()
   Firebase.setInt("Times", times);
   Firebase.setFloat("Humidity", humidity);
   Firebase.setFloat("Temp", temperature);
-  
+
   Serial.print(rounds);
   Serial.print("  ");
   Serial.print(times);
@@ -73,9 +73,35 @@ void loop()
     Firebase.setFloat("AvgTemp", avgTemp);
     Serial.print(avgTemp);
     Serial.println("C (avg)");
+
+    findPlants(avgTemp);  
     rounds=0;
     tTemp=0;
   }
-  
-  //delay(dht.getMinimumSamplingPeriod());
 }
+
+void findPlants(float avT){
+  
+  Serial.println("fuction findPlants : working...");
+  if(avT<19){
+    Firebase.setString("Plants", "ไม่มีพืชผักที่สามรปลูกได้*");}
+    else if(avT>=19&&avT<22){
+      Firebase.setString("Plants", "ผักขม ,เห็ด");}
+    else if(avT>=22&&avT<25){
+      Firebase.setString("Plants", "พาสลีย์ ,ผักกาดหอม ,แครรอท");}
+    else if(avT>=25&&avT<28){
+      Firebase.setString("Plants", "หอมหัวใหญ่ ,พืชตระกูลถั่ว ,พริก");}
+    else if(avT>=28&&avT<31){
+      Firebase.setString("Plants", "มะเขือเทศ ,กะหล่ำปลี ,มะเขือยาว");}
+    else if(avT>=31&&avT<33){
+      Firebase.setString("Plants", "ฟักทอง ,ถั่วฝักยาว ,ข้าวโพดหวาน");}
+    else if(avT>=33&&avT<35){
+      Firebase.setString("Plants", "แตงโม ,แตงกวา ,แตงไทย");}
+    else if(avT>=35){
+      Firebase.setString("Plants", "ไม่มีพืชผักที่สามรปลูกได้*");}  
+   //*ข้อมูลพืชที่มีในข้อมูลของโปรแกรมเท่านั้น
+ 
+ }
+ 
+
+
