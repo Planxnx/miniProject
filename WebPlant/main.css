@@ -1,6 +1,10 @@
 body {
-    background-image: url("backG.jpg");
-    background-color: #cccccc;
-    background-size: 200px 100px;
-    background-position: center; 
+	background-image: url("backG.jpg");
+	background-color: #5C0F10;
+	background-size: 1536px 732px;
+	color: #000000;
+	font-family: "TH SarabunPSK";
+	font-style: normal;
+	font-weight: 400;
+    /*background-position: center;*/ 
 }
