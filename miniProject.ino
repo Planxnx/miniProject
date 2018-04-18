@@ -50,6 +50,7 @@ void loop()
   Firebase.setInt("Times", times);
   Firebase.setFloat("Humidity", humidity);
   Firebase.setFloat("Temp", temperature);
+  Firebase.setFloat("timeCounts", rounds);
 
   Serial.print(rounds);
   Serial.print("  ");
