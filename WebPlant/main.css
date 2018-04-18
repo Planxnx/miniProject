@@ -1,10 +1,79 @@
+@font-face {
+    font-family: 'thaisans_neuelight';
+    src: url('thaisansneue-light-webfont.woff2') format('woff2'),
+         url('thaisansneue-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
-	background-image: url("backG.jpg");
-	background-color: #5C0F10;
-	background-size: 1536px 732px;
-	color: #000000;
-	font-family: "TH SarabunPSK";
-	font-style: normal;
-	font-weight: 400;
-    /*background-position: center;*/ 
+	color: #ffffff;
+	background-color: #52a57a;
+	font-family: "thaisans_neuelight";
+}
+#wrapper {
+	width: 1000px;
+	margin: 25px auto 25px auto;
+	background: #52a57a; 
+	-moz-border-radius: 5px;
+}
+#header {
+	width: 1000px;
+	height: 100px;
+	float: left;
+	margin-top:25px;
+}
+#wraptitle {
+	width: 500px;
+	float: left;
+	background-image: url("title.png");
+	background-repeat: no-repeat;
+	margin-top: 0px;
+	height: 110px;
+}
+#icon {
+	width: 100px;
+	float: left;
+	margin:0 0 0 60px;
+	height: 100px;
+	border:none
+}
+#title {
+	width: 340px;
+	float: right;
+	margin-top: -5px;
+	height: 100px;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+h1.blog-title {
+	font-size: 320%;
+	font-weight: normal;
+	padding: 5px 25px 0px;
+	text-decoration: none;
+	margin-bottom: 0;
+	margin-left: -28px;
+}
+.blog-desc {
+	font-size: 107%;
+	margin-top: 0;
+	margin-right: 25px;
+	margin-left: 1px;
+	margin-bottom: 0;
+}
+#content {
+	width: 800px;
+	background-image: url("content.png");
+	background-repeat: no-repeat, repeat;
+	height: 500px;
+	margin-left: 112px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+#result {
+	width: 800px;	
+	font-size: 130%
 }
