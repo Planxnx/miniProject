@@ -9,10 +9,10 @@ var config = {
   firebase.initializeApp(config);
   
   //auth การรับรองสิทธ
-  firebase.auth().signInWithEmailAndPassword("admin@test.com", "123456789").catch(function(error) {
+  /*firebase.auth().signInWithEmailAndPassword("admin@test.com", "123456789").catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
     
     // ...
-  });
+  });*/
