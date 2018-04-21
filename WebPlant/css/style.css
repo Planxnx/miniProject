@@ -14,7 +14,6 @@ body {
 	width: 1000px;
 	margin: 25px auto 25px auto;
 	background: #52a57a; 
-	-moz-border-radius: 5px;
 }
 #header {
 	width: 1000px;
@@ -25,20 +24,20 @@ body {
 #wraptitle {
 	width: 500px;
 	float: left;
-	background-image: url("title.png");
+	background-image: url("img/title.png");
 	background-repeat: no-repeat;
 	margin-top: 0px;
 	height: 110px;
 }
 #icon {
-	width: 100px;
+	width: 10px;
 	float: left;
-	margin:0 0 0 60px;
-	height: 100px;
+	margin:0 0 0 82px;
+	height: 80px;
 	border:none
 }
 #title {
-	width: 340px;
+	width: 408px;
 	float: right;
 	margin-top: -5px;
 	height: 100px;
@@ -66,7 +65,7 @@ h1.blog-title {
 }
 #content {
 	width: 800px;
-	background-image: url("content.png");
+	background-image: url("img/content.png");
 	background-repeat: no-repeat, repeat;
 	height: 500px;
 	margin-left: 112px;
