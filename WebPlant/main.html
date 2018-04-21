@@ -4,11 +4,12 @@
     <title>Web Plant Monitor</title>    
 	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 	<script src="js/firebaseLogin.js"></script>
-	<script src="js/main.js"></script>									
-    <link rel="stylesheet" type="text/css" href="main.css">	
+	<script src="js/startup.js"></script>	
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 	
     <script>
         alert("ยินดีต้อนรับสู่ Plant Monitor")
-    </script>
+	</script>
+	<script src="js/main.js"></script>
 <script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/cabin:n4:default;josefin-sans:n1:default.js" type="text/javascript"></script>
 </head>
 <body>
@@ -16,7 +17,7 @@
     <div id="header">
 		<div align="center">
 			<div id="wraptitle">
-				<div id="icon"><img src="icon.png"></div>
+				<div id="icon"><img src="img/icon.png"></div>
 				<div id="title">
         		<h1 class="blog-title">PLANT MONITOR</h1>
         		<span class="blog-desc">เครื่องมือช่วยเลือกพืชผักที่เหมาะสมในสภาพแวดล้อมนั้นๆ</span>
@@ -27,9 +28,9 @@
     <div id="content"align="center">
 		<div >
         <div id="result" >
-          <p align="center">⠀<br>⠀<br>⠀<br><strong>อุณหภูมิ ณ ขณะนี้คือ</strong> <tempS>รอสักครู่...</tempS><strong> °C</strong> <br>
-            <strong>พืชผักที่เหมาะสมกับการปลูกคือ </strong><Plants>รอสักครู่...</Plants></p>
-          ⠀<br>⠀<br>⠀<br>กำลังรอผล <timeS>0</timeS> / 60<br><p>*ข้อมูลพืชที่มีในข้อมูลของโปรแกรมเท่านั้น</p>
+          <p align="center">⠀<br>⠀<br>⠀<br><strong>อุณหภูมิ ณ ขณะนี้คือ</strong> <tempS>กำลังเชื่อมต่อ...</tempS><strong> °C</strong> <br>
+            <strong>พืชผักที่เหมาะสมกับการปลูกคือ </strong><Plants>กำลังเชื่อมต่อ...</Plants></p>
+          ⠀<br>⠀<br>⠀<br>กำลังรอผล : <timeS>0</timeS> / 100<br><p>*ข้อมูลพืชที่มีในข้อมูลของโปรแกรมเท่านั้น</p>
         </div>  
     	</div>
 		<div style="clear:both; margin-bottom:10px"></div>
