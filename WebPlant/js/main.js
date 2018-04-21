@@ -1,6 +1,7 @@
 var db = firebase.database();//ใช้งานดาต้าเบส
-    var a = "test4"
+    
 /*
+    var a = "test4"
     //อัพข้อมูล A ไปที่ test/test2
     firebase.database().ref('test/test2/' ).set("A");  
     //อัพข้อมูลหลายๆข้อมูลไปที่ test/test3/test4
@@ -16,7 +17,6 @@ var db = firebase.database();//ใช้งานดาต้าเบส
         var p = document.querySelector('Plants');
         var t = document.querySelector('tempS');
         var tS = document.querySelector('timeS');
-        var x=1;
         console.log("Read Data :"+ data.timeCounts );
         p.innerHTML = data.Plants;
         t.innerHTML = data.Temp;
