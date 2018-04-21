@@ -11,6 +11,7 @@
 
 DHT dht;//สร้างออบเจกค
 int rounds=0;
+int process=0;
 float arTemp[61],avgTemp,tTemp;
 
 void setup()
@@ -46,12 +47,14 @@ void loop()
   float times = x/1000;//แปลงหน่วย
   float humidity = dht.getHumidity(); // ดึงค่าความชื้น
   float temperature = dht.getTemperature(); // ดึงค่าอุณหภูมิ
-  
+
+  process = (rounds*100)/60;
   Firebase.setInt("Times", times);
   Firebase.setFloat("Humidity", humidity);
   Firebase.setFloat("Temp", temperature);
-  Firebase.setFloat("timeCounts", rounds);
-
+  Firebase.setFloat("timeCounts", process);
+  Serial.print(process);
+  Serial.print("  ");
   Serial.print(rounds);
   Serial.print("  ");
   Serial.print(times);
