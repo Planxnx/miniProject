@@ -84,11 +84,11 @@ void findPlants(float avT){
 
   Serial.println("fuction findPlants : working...");
   if(avT<19){
-    Firebase.setString("Plants", "ไม่มีพืชผักที่สามรปลูกได้*");}
+    Firebase.setString("Plants", "ไม่มีพืชผักที่สามารถปลูกได้*");}
     else if(avT>=19&&avT<22){
       Firebase.setString("Plants", "ผักขม ,เห็ด");}
     else if(avT>=22&&avT<25){
-      Firebase.setString("Plants", "พาสลีย์ ,ผักกาดหอม ,แครรอท");}
+      Firebase.setString("Plants", "พาสลีย์ ,ผักกาดหอม ,แครอท");}
     else if(avT>=25&&avT<28){
       Firebase.setString("Plants", "หอมหัวใหญ่ ,พืชตระกูลถั่ว ,พริก");}
     else if(avT>=28&&avT<31){
@@ -98,6 +98,6 @@ void findPlants(float avT){
     else if(avT>=33&&avT<35){
       Firebase.setString("Plants", "แตงโม ,แตงกวา ,แตงไทย");}
     else if(avT>=35){
-      Firebase.setString("Plants", "ไม่มีพืชผักที่สามรปลูกได้*");}  
+      Firebase.setString("Plants", "ไม่มีพืชผักที่สามารถปลูกได้*");}  
    //*ข้อมูลพืชที่มีในข้อมูลของโปรแกรมเท่านั้น  
  }
