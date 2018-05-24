@@ -1,0 +1,97 @@
+@viewport {
+	width: 375px auto;  
+ }
+@media screen and (min-width: 380px) and (max-width: 414px) {
+    @-ms-viewport { 
+        width: 375px; 
+	}
+	@-o-viewport { 
+		width: 375px; 
+	 }
+	 @viewport {
+		width: 375px;  
+	 }
+}
+@font-face {
+    font-family: 'thaisans_neuelight';
+    src: url('thaisansneue-light-webfont.woff2') format('woff2'),
+         url('thaisansneue-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	height: 667px;
+    width: 375px;
+	color: #ffffff;
+	background-color: #52a57a;
+	font-family: "thaisans_neuelight";
+}
+#wrapper {
+	width: 375px;
+	/*margin: 25px auto 25px auto;*/
+	background: #52a57a; 
+}
+#header {
+	width: 360px;
+	height: 37px;
+	float: left;
+	margin-top:0px;
+	
+}
+#wraptitle {
+	width: 360px;
+	float: left;
+	/*background-image: url("img/title.png");
+	background-repeat: no-repeat;*/
+	margin-top: 0px;
+	height: 90px;
+	background: #281706;
+}
+#icon {
+	width: 10px;
+	float: left;
+	margin:0 0 0 35px;
+	height: 80px;
+	border:none
+}
+#title {
+	width: 300px;
+	float: right;
+	margin-top: -5px;
+	height: 100px;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+h1.blog-title {
+	font-size: 220%;
+	font-weight: normal;
+	padding: 5px 25px 0px;
+	text-decoration: none;
+	margin-bottom: 0;
+	margin-left: -28px;
+}
+.blog-desc {
+	font-size: 107%;
+	margin-top: 0;
+	margin-right: 25px;
+	margin-left: 1px;
+	margin-bottom: 0px;
+}
+#content {
+	width: 360px;
+	/*background-image: url("img/content.png");
+	background-repeat: no-repeat, repeat;*/
+	height: 300px;
+	margin-bottom: 5px;
+
+}
+#result {
+	margin-top: 10;
+	width: 300px;	
+	font-size: 100%;
+	height: 300px;
+}
